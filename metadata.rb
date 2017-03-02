@@ -7,6 +7,7 @@ long_description 'Installs/Configures git-wrapper'
 version '0.1.0'
 
 depends 'git', '~> 6.0.0' 
+depends 'git-extensions', '~> 0.1.0'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
