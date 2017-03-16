@@ -6,5 +6,3 @@
 
 include_recipe 'git::windows'
 include_recipe 'git-extensions::default'
-
-
