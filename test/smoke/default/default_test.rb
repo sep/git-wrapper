@@ -1,18 +1,10 @@
 # # encoding: utf-8
 
-# Inspec test for recipe git-wrapper::default
+packages_installed = ['Git version 2.8.1',
+                      'Git Extensions 2.49']
 
-# The Inspec reference, with examples and extensive documentation, can be
-# found at http://inspec.io/docs/reference/resources/
-
-unless os.windows?
-  describe user('root') do
-    it { should exist }
-    skip 'This is an example test, replace with your own test.'
+packages_installed.each do |x|
+  describe package(x) do
+    it { should be_installed }
   end
-end
-
-describe port(80) do
-  it { should_not be_listening }
-  skip 'This is an example test, replace with your own test.'
 end
